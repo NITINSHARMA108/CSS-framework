@@ -1,0 +1,53 @@
+body{
+    overflow-x:hidden;
+    margin:0;
+}
+.navbar{
+    width:100%;
+    margin:0px;
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+   
+    align-items:center;
+}
+.nav-menu-bar{
+    display:none;
+}
+
+.nav-logo{
+    
+    display:flex;
+
+}
+.nav-list{
+   
+    list-style-type:none;
+    display:flex;
+    
+}
+.nav-left{
+    justify-content: start;
+}
+.nav-center{
+    justify-content: center;
+}
+.nav-item{
+    margin:auto 10px;
+}
+.nav-right{
+    justify-content: end;
+}
+@media screen and (max-width:1007px){
+.nav-list-none{
+    display:none;
+}
+.nav-menu-bar{
+    display:block;
+}
+}
+.fixed-nav{
+    position:absolute;
+    left:0;
+    top:0;
+}
