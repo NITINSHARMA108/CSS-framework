@@ -1,7 +1,12 @@
+$width-setter:8;
+
+//setting width for column classes
 @mixin setwidth($column) {
-    width:percentage($column/12);
-    
+    $num:( $width-setter)*$column;
+    width:percentage($num/100);
+    margin-right:0.33;
 }
+
 
 /* setting 12 columns for small devices */
 @mixin setcolumnsForSmallDevice{
@@ -12,10 +17,11 @@
             overflow-x:hidden;
             display:flex;
             flex-direction: column;
-            padding:5px 10px;
+            padding:4px 4px;
             box-sizing:border-box;
+            margin-top:20px;
             margin-bottom:20px;
-            align-items:center;
+            font-size:12px;
         }
         
     }
@@ -30,10 +36,11 @@
             overflow-x:hidden;
             display:flex;
             flex-direction: column;
-            padding:5px 10px;
+            padding:6px 10px;
             box-sizing: border-box;
             margin-bottom:20px;
-            align-items:center;
+            margin-top:20px;
+            font-size:16px;
         }
         
     }
@@ -48,10 +55,11 @@
             overflow-x:hidden;
             display:flex;
             flex-direction: column;
-            align-items:center;
-            padding:5px 10px;
+            padding:10px 10px;
             box-sizing: border-box;
             margin-bottom:20px;
+            margin-top:20px;
+            font-size:20px;
         }
         
     }
@@ -63,11 +71,11 @@
     width:100%;
     margin:0;
     overflow-x:hidden;
+    
     .row{
         width:100%;
         display:flex;
         flex-wrap: wrap;
-        justify-content: center;
         @media screen and (max-width:640px){
             @include setcolumnsForSmallDevice();
             
@@ -92,7 +100,6 @@
     max-width:80%;
     margin:auto;
     overflow-x:hidden;
-    justify-content: center;
     .row{
         width:100%;
         display:flex;

@@ -1,24 +1,28 @@
 .form{
     width:100%;
+    .form-group{
+        width:100%;
+        margin:10px 20px;
+
+        label{
+            display:block;
+            width:100%;
+            margin-bottom:5px;
+        
+        }
+        input{
+            width:100%;
+            display:block;
+            border-radius:5px;
+            border:1px solid black;
+            height:20px;
+        }
+        input:focus{
+            border:1px solid blue;
+        }
+    }
 }
 
-.form-group{
-    width:100%;
-    margin:10px 20px;
-}
-.form label{
-    display:block;
-    width:100%;
-    margin-bottom:5px;
 
-}
-.form input{
-    width:100%;
-    display:block;
-}
 
-.form input:focus{
-    border:1px solid blue;
-    border:1px solid black;
-    border-radius:5px;
-}
+

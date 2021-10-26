@@ -8,20 +8,13 @@ body{
     display:flex;
     justify-content:space-between;
     padding:20px;
-   
     align-items:center;
-}
-.nav-menu-bar{
-    display:none;
 }
 
 .nav-logo{
-    
     display:flex;
-
 }
 .nav-list{
-   
     list-style-type:none;
     display:flex;
     
@@ -32,20 +25,22 @@ body{
 .nav-center{
     justify-content: center;
 }
-.nav-item{
-    margin:auto 10px;
-}
 .nav-right{
     justify-content: end;
 }
-@media screen and (max-width:1007px){
-.nav-list-none{
-    display:none;
+
+.nav-item{
+    margin:auto 10px;
 }
-.nav-menu-bar{
-    display:block;
+
+@media screen and (max-width:1006px){
+    .nav-list-none{
+        display:none;
+    }
+    
 }
-}
+
+
 .fixed-nav{
     position:absolute;
     left:0;

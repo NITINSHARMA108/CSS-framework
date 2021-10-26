@@ -12,10 +12,6 @@ body {
   align-items: center;
 }
 
-.nav-menu-bar {
-  display: none;
-}
-
 .nav-logo {
   display: flex;
 }
@@ -33,21 +29,17 @@ body {
   justify-content: center;
 }
 
-.nav-item {
-  margin: auto 10px;
-}
-
 .nav-right {
   justify-content: end;
 }
 
-@media screen and (max-width: 1007px) {
+.nav-item {
+  margin: auto 10px;
+}
+
+@media screen and (max-width: 1006px) {
   .nav-list-none {
     display: none;
-  }
-
-  .nav-menu-bar {
-    display: block;
   }
 }
 .fixed-nav {
@@ -59,27 +51,24 @@ body {
 .form {
   width: 100%;
 }
-
-.form-group {
+.form .form-group {
   width: 100%;
   margin: 10px 20px;
 }
-
-.form label {
+.form .form-group label {
   display: block;
   width: 100%;
   margin-bottom: 5px;
 }
-
-.form input {
+.form .form-group input {
   width: 100%;
   display: block;
-}
-
-.form input:focus {
-  border: 1px solid blue;
-  border: 1px solid black;
   border-radius: 5px;
+  border: 1px solid black;
+  height: 20px;
+}
+.form .form-group input:focus {
+  border: 1px solid blue;
 }
 
 /* setting 12 columns for small devices */
@@ -94,372 +83,443 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 @media screen and (max-width: 640px) {
   .container-fluid .row .column-1 {
-    width: 8.3333333333%;
+    width: 8%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container-fluid .row .column-2 {
-    width: 16.6666666667%;
+    width: 16%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container-fluid .row .column-3 {
-    width: 25%;
+    width: 24%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container-fluid .row .column-4 {
-    width: 33.3333333333%;
+    width: 32%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container-fluid .row .column-5 {
-    width: 41.6666666667%;
+    width: 40%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container-fluid .row .column-6 {
-    width: 50%;
+    width: 48%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container-fluid .row .column-7 {
-    width: 58.3333333333%;
+    width: 56%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container-fluid .row .column-8 {
-    width: 66.6666666667%;
+    width: 64%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container-fluid .row .column-9 {
-    width: 75%;
+    width: 72%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container-fluid .row .column-10 {
-    width: 83.3333333333%;
+    width: 80%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container-fluid .row .column-11 {
-    width: 91.6666666667%;
+    width: 88%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container-fluid .row .column-12 {
-    width: 100%;
+    width: 96%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 1007px) and (min-width: 641px) {
   .container-fluid .row .column-md-1 {
-    width: 8.3333333333%;
+    width: 8%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container-fluid .row .column-md-2 {
-    width: 16.6666666667%;
+    width: 16%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container-fluid .row .column-md-3 {
-    width: 25%;
+    width: 24%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container-fluid .row .column-md-4 {
-    width: 33.3333333333%;
+    width: 32%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container-fluid .row .column-md-5 {
-    width: 41.6666666667%;
+    width: 40%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container-fluid .row .column-md-6 {
-    width: 50%;
+    width: 48%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container-fluid .row .column-md-7 {
-    width: 58.3333333333%;
+    width: 56%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container-fluid .row .column-md-8 {
-    width: 66.6666666667%;
+    width: 64%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container-fluid .row .column-md-9 {
-    width: 75%;
+    width: 72%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container-fluid .row .column-md-10 {
-    width: 83.3333333333%;
+    width: 80%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container-fluid .row .column-md-11 {
-    width: 91.6666666667%;
+    width: 88%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container-fluid .row .column-md-12 {
-    width: 100%;
+    width: 96%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 1008px) {
   .container-fluid .row .column-lg-1 {
-    width: 8.3333333333%;
+    width: 8%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container-fluid .row .column-lg-2 {
-    width: 16.6666666667%;
+    width: 16%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container-fluid .row .column-lg-3 {
-    width: 25%;
+    width: 24%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container-fluid .row .column-lg-4 {
-    width: 33.3333333333%;
+    width: 32%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container-fluid .row .column-lg-5 {
-    width: 41.6666666667%;
+    width: 40%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container-fluid .row .column-lg-6 {
-    width: 50%;
+    width: 48%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container-fluid .row .column-lg-7 {
-    width: 58.3333333333%;
+    width: 56%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container-fluid .row .column-lg-8 {
-    width: 66.6666666667%;
+    width: 64%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container-fluid .row .column-lg-9 {
-    width: 75%;
+    width: 72%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container-fluid .row .column-lg-10 {
-    width: 83.3333333333%;
+    width: 80%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container-fluid .row .column-lg-11 {
-    width: 91.6666666667%;
+    width: 88%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container-fluid .row .column-lg-12 {
-    width: 100%;
+    width: 96%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
 }
 
@@ -467,7 +527,6 @@ body {
   max-width: 80%;
   margin: auto;
   overflow-x: hidden;
-  justify-content: center;
 }
 .container .row {
   width: 100%;
@@ -476,368 +535,440 @@ body {
 }
 @media screen and (max-width: 640px) {
   .container .row .column-1 {
-    width: 8.3333333333%;
+    width: 8%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container .row .column-2 {
-    width: 16.6666666667%;
+    width: 16%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container .row .column-3 {
-    width: 25%;
+    width: 24%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container .row .column-4 {
-    width: 33.3333333333%;
+    width: 32%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container .row .column-5 {
-    width: 41.6666666667%;
+    width: 40%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container .row .column-6 {
-    width: 50%;
+    width: 48%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container .row .column-7 {
-    width: 58.3333333333%;
+    width: 56%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container .row .column-8 {
-    width: 66.6666666667%;
+    width: 64%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container .row .column-9 {
-    width: 75%;
+    width: 72%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container .row .column-10 {
-    width: 83.3333333333%;
+    width: 80%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container .row .column-11 {
-    width: 91.6666666667%;
+    width: 88%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
   .container .row .column-12 {
-    width: 100%;
+    width: 96%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 4px 4px;
     box-sizing: border-box;
+    margin-top: 20px;
     margin-bottom: 20px;
-    align-items: center;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 1007px) and (min-width: 641px) {
   .container .row .column-md-1 {
-    width: 8.3333333333%;
+    width: 8%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container .row .column-md-2 {
-    width: 16.6666666667%;
+    width: 16%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container .row .column-md-3 {
-    width: 25%;
+    width: 24%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container .row .column-md-4 {
-    width: 33.3333333333%;
+    width: 32%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container .row .column-md-5 {
-    width: 41.6666666667%;
+    width: 40%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container .row .column-md-6 {
-    width: 50%;
+    width: 48%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container .row .column-md-7 {
-    width: 58.3333333333%;
+    width: 56%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container .row .column-md-8 {
-    width: 66.6666666667%;
+    width: 64%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container .row .column-md-9 {
-    width: 75%;
+    width: 72%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container .row .column-md-10 {
-    width: 83.3333333333%;
+    width: 80%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container .row .column-md-11 {
-    width: 91.6666666667%;
+    width: 88%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
   .container .row .column-md-12 {
-    width: 100%;
+    width: 96%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    padding: 5px 10px;
+    padding: 6px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    align-items: center;
+    margin-top: 20px;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 1008px) {
   .container .row .column-lg-1 {
-    width: 8.3333333333%;
+    width: 8%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container .row .column-lg-2 {
-    width: 16.6666666667%;
+    width: 16%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container .row .column-lg-3 {
-    width: 25%;
+    width: 24%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container .row .column-lg-4 {
-    width: 33.3333333333%;
+    width: 32%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container .row .column-lg-5 {
-    width: 41.6666666667%;
+    width: 40%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container .row .column-lg-6 {
-    width: 50%;
+    width: 48%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container .row .column-lg-7 {
-    width: 58.3333333333%;
+    width: 56%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container .row .column-lg-8 {
-    width: 66.6666666667%;
+    width: 64%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container .row .column-lg-9 {
-    width: 75%;
+    width: 72%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container .row .column-lg-10 {
-    width: 83.3333333333%;
+    width: 80%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container .row .column-lg-11 {
-    width: 91.6666666667%;
+    width: 88%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
   .container .row .column-lg-12 {
-    width: 100%;
+    width: 96%;
+    margin-right: 0.33;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 20px;
   }
 }
 
@@ -857,14 +988,15 @@ body {
   display: none;
 }
 
-.offset-1 {
-  margin-left: 8.3333333333%;
+/*
+.offset-1{
+    margin-left:percentage(1/12);
 }
+.offset-half{
+    margin-left: percentage(1/24);
 
-.offset-half {
-  margin-left: 4.1666666667%;
 }
-
+*/
 .btn {
   border-radius: 5px;
   background-color: white;
